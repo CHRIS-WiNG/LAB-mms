@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wzb.member.mapper.TeacherMapper">
+    <select id="searchPage" resultType="Teacher">
+        SELECT t1.id,
+        t1.name,
+        t1.tch_num,
+        t1.mobile,
+        t1.email,
+        t1.office,
+        t1.level,
+        t1.team_id,
+        t2.name team_name
+        FROM gil_mms.tb_teacher t1
+        LEFT JOIN gil_mms.tb_team t2 on t1.team_id = t2.id
+        WHERE 1 = 1
+        <if test="req.name != null and req.name != ''">
+            AND t1.name LIKE CONCAT('%', #{req.name}, '%')
+        </if>
+        <if test="req.tchNum != null and req.tchNum != ''">
+            AND t1.tch_num LIKE CONCAT('%', #{req.tchNum}, '%')
+        </if>
+        <if test="req.level != null and req.level != ''">
+            AND t1.level = #{req.level}
+        </if>
+        <if test="req.teamId != null and req.teamId != ''">
+            AND t1.team_id = #{req.teamId}
+        </if>
+    </select>
+</mapper>
