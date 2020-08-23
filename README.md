@@ -32,13 +32,15 @@
 ![](./img/upload_img.gif)
 
 
-##### 每日打卡
-![](./img/20200822092612.png)
-
-
 ##### 日报汇总
 
-![](https://zebin.shop/img/show_diary.gif)
+![](./img/show_diary.gif)
+
+
+##### 每日打卡
+![](https://zebin.shop/img/20200822092612.png)
+
+
 
 ##### 学生管理
 
