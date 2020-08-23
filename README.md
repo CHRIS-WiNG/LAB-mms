@@ -21,19 +21,19 @@
 
 ##### 三维影像展示
 
-![](https://zebin.shop/img/20200823201740.png)
+![](https://zebin.shop/img/20200823203813.jpeg)
 
 ##### 编辑日报
 
-![](https://zebin.shop/img/homepage.gif)
+![](./img/homepage.gif)
 
 ##### 上传图片
 
-![](https://zebin.shop/img/upload_img.gif)
+![](./img/upload_img.gif)
 
 
 ##### 每日打卡
-![](https://zebin.shop/img/20200822092612.png)
+![](./img/20200822092612.png)
 
 
 ##### 日报汇总
