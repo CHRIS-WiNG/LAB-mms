@@ -21,15 +21,15 @@
 
 ##### 三维影像展示
 
-![](https://zebin.shop/img/20200821222154.png)
+![](https://zebin.shop/img/20200823201740.png)
 
-##### 提交日报
+##### 编辑日报
 
-![](https://zebin.shop/img/%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B62020-08-22%20%E4%B8%8A%E5%8D%889.04.30.gif)
+![](https://zebin.shop/img/homepage.gif)
 
 ##### 上传图片
 
-![](https://zebin.shop/img/%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B62020-08-22%20%E4%B8%8A%E5%8D%889.13.04.gif)
+![](https://zebin.shop/img/upload_img.gif)
 
 
 ##### 每日打卡
@@ -38,7 +38,7 @@
 
 ##### 日报汇总
 
-![](https://zebin.shop/img/%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B62020-08-22%20%E4%B8%8A%E5%8D%889.28.44.gif)
+![](https://zebin.shop/img/show_diary.gif)
 
 ##### 学生管理
 
