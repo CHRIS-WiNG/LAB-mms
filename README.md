@@ -12,16 +12,16 @@
 ## 页面展示
 
 ##### 登录页面
-![](https://zebin.shop/img/20200821221844.png)
+![](./img/login.png)
 
 
 ##### 首页展示
 
-![](https://zebin.shop/img/image-20200821222032063.png)
+![](./img/home.png)
 
 ##### 三维影像展示
 
-![](https://zebin.shop/img/20200823203813.jpeg)
+![](./img/model.jpeg)
 
 ##### 编辑日报
 
@@ -38,13 +38,13 @@
 
 
 ##### 每日打卡
-![](https://zebin.shop/img/20200822092612.png)
+![](./img/clock_in.png)
 
 
 
 ##### 学生管理
 
-![](https://zebin.shop/img/20200822093312.png)
+![](./img/diary.png)
 
 ##### 
 
@@ -164,7 +164,7 @@ npm run build
 | 三维地球影像 | Cesium |
 #### 后端结构设计
 
-![](https://zebin.shop/img/20200823015607.png)
+![](./img/backend_architecture.png)
 
 
 ## 业务设计
