@@ -153,6 +153,7 @@ npm run build
 | 项目构建  | Maven |
 
 - **前端技术**
+ 
 |  工具 | 名称 |
 | ------------ | ------------|
 | 前端框架 | Vue |
@@ -162,6 +163,7 @@ npm run build
 | UI框架 | ElementUI |
 | MarkDown编辑器插件 | mavonEditor |
 | 三维地球影像 | Cesium |
+
 #### 后端结构设计
 
 ![](./img/backend_architecture.png)
