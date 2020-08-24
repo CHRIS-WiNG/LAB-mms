@@ -5,9 +5,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.wzb.member.base.Page;
 import com.wzb.member.base.Result;
-import com.wzb.member.entity.Clockin;
 import com.wzb.member.entity.Diary;
-import com.wzb.member.entity.Student;
 import com.wzb.member.mapper.DiaryMapper;
 import com.wzb.member.request.DiaryREQ;
 import com.wzb.member.service.IDiaryService;
@@ -85,9 +83,9 @@ public class DiaryServiceImpl extends ServiceImpl<DiaryMapper, Diary> implements
             if (StringUtils.isNotBlank(req.getName())) {
                 query.like("name", req.getName().trim());
             }
-            if (req.getDate() != null && req.getDate()[0] != null) {
-                Date startDate = req.getDate()[0];
-                Date endDate = req.getDate()[1];
+            if (req.getDate() != null && req.getDate().size() != 0) {
+                Date startDate = req.getDate().get(0);
+                Date endDate = req.getDate().get(1);
                 query.between("date", startDate, endDate);
             }
         }

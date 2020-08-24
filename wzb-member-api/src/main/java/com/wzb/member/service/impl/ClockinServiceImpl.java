@@ -22,7 +22,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 
 /**
  * <p>
@@ -41,9 +40,9 @@ public class ClockinServiceImpl extends ServiceImpl<ClockinMapper, Clockin> impl
             if (StringUtils.isNotBlank(req.getName())) {
                 query.like("name", req.getName().trim());
             }
-            if (req.getDate() != null && req.getDate()[0] != null) {
-                Date startDate = req.getDate()[0];
-                Date endDate = req.getDate()[1];
+            if (req.getDate() != null && req.getDate().size() != 0) {
+                Date startDate = req.getDate().get(0);
+                Date endDate = req.getDate().get(1);
                 query.between("date", startDate, endDate);
             }
         }
