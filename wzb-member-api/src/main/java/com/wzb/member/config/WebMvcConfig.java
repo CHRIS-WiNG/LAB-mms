@@ -10,16 +10,17 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
  * @author Zebin Wang
  * @Title:
  * @Package
- * @Description:
+ * @Description: 实现 WebMvcConfigurer 接口而不是继承 WebMvcConfigurationSupport 是因为
+ * 继承 WebMvcConfigurationSupport 就不能开启 WebMvcAutoConfiguration 自动配置类，静态资源无法自动映射
  */
 @Configuration
-public class WebMvcConfig extends WebMvcConfigurationSupport {
+public class WebMvcConfig implements WebMvcConfigurer {
 
     @Autowired
     private AuthenticationFilter authenticationFilter;
 
     @Override
-    protected void addInterceptors(InterceptorRegistry registry) {
+    public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(authenticationFilter)
                 // 拦截所有请求
                 .addPathPatterns("/**")

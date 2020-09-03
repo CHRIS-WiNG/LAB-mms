@@ -1,5 +1,5 @@
 server:
-  port: 6666
+  port: 8080
 
 # 数据源配置
 spring:
@@ -9,14 +9,23 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/你的数据库名?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
     #mysql8版本以上驱动包指定新的驱动类
     driver-class-name: com.mysql.cj.jdbc.Driver
-    #   数据源其他配置, 在 DruidConfig配置类中手动绑定
+    #数据源其他配置, 在DruidConfig配置类中手动绑定
     initialSize: 8
     minIdle: 5
     maxActive: 20
     maxWait: 60000
     timeBetweenEvictionRunsMillis: 60000
     minEvictableIdleTimeMillis: 300000
-    validationQuery: SELECT 1 FROM DUAL
+    validationQuery: SELECT 1 FROM
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    #   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    filters: stat,wall,slf4j
+    maxPoolPreparedStatementPerConnectionSize: 25
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
   servlet:
     multipart:
 #      设置单个文件大小
